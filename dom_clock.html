@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> 문서 객체를 사용한 시간 표시</title>
+    <script>
+      var res;
+    			// 이벤트를 연결합니다.
+    			window.onload = function () {
+    				// 변수를 선언합니다.
+    				var clock = document.getElementById('clock');
+
+    				// 1초마다 함수를 실행합니다.
+    			res=	setInterval(function () {
+    					var now = new Date();
+    					clock.innerHTML = now.toString();
+
+    				}, 1000);
+    			};
+          function stop(){
+            clearInterval(res);
+          }
+    		</script>
+    	</head>
+    	<body>
+    		<h1 id="clock"></h1>
+        <a href="#" onclick="stop()">정지</a>
+    	</body>
+    </html>
