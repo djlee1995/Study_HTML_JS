@@ -1,0 +1,15 @@
+  <script>
+  document.write("<table border='1' align='center'>");
+  document.write("<tr>");
+  for (var i = 2; i <= 9; i++) {
+    document.write("<th>"+i+"단"+"</th>");
+  }
+  document.write("</tr>");
+  for(var j=1; j<= 9; j++){
+    document.write("<tr>");
+    for (var i = 2; i <=9; i++) {
+      document.write("<td>"+i+"*"+j+"="+i*j+"</td>")
+    }
+    document.write("</tr>");
+  }
+  </script>
