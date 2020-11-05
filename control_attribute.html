@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>문서 객체 속성 조작</title>
+    <script>
+            // 이벤트를 연결합니다.
+            window.onload = function () {
+                // 변수를 선언합니다.
+                var image = document.getElementById('image');
+
+                // 속성을 변경합니다.
+                var img_src = image.getAttribute('alt');
+                alert(img_src)
+            };
+        </script>
+    </head>
+    <body>
+        <img id="image"src="12345.png"alt="옴팡이">
+    </body>
+    </html>
