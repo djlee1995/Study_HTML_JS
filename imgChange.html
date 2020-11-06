@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>마우스를 올리면 이미지가 변경</title>
+    <script type="text/javascript">
+      function imgChange(num){
+       document.images[0].src = "./images/daum"+num+".gif";
+       }
+    </script>
+  </head>
+  <body>
+    image객체 예제<br />
+ 그림 위에 마우스를 올리면 다른 이미지로 변경된다.<br /><br />
+ &nbsp; &nbsp; &nbsp; &nbsp;
+ <image src="./images/daum0.gif" onmouseover="imgChange(1);"
+ onmouseout="imgChange(0);" />
+  </body>
+</html>
