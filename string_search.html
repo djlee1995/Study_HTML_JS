@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>특정 문자 검색하고 잘라내기</title>
+  </head>
+  <script type="text/javascript">
+    function check(){
+     var email, id, n ;
+     email= document.form1.email.value;
+     n = email.indexOf("@");
+       if( n > 0) {
+       document.form1.id.value = email.substr(0,n);
+       }
+       else {
+         alert("정확한 Email주소를 입력하세요");
+       }
+     }
+  </script>
+  <body>
+    <form name="form1">string_search 객체 예제<br />
+     Email을 체크합니다.<br /><br />
+     Email : <input type="text" name="email" onblur="check();" />
+     <br /><br />
+     ID : <input type="text" name="id" />
+     </form>
+  </body>
+</html>
