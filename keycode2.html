@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>키코드를 통해 소문자를 대문자로 변경</title>
+  </head>
+  <script type="text/javascript">
+    function trans(){
+      var txt;
+      txt = document.form1.id.value;
+      txt = txt.toUpperCase();
+      document.form1.id.value = txt;
+ }
+
+  </script>
+  <body>
+    <form name="form1">
+   string객체 예제<br />
+   ID를 입력 후 다음양식으로 커서를 옮기면 입력한 ID를 대문자로 변경합니다.
+   <br /><br />
+   ID : <input type="text" name="id" onblur="trans();" /> <br /><br />
+   Email : <input type="text" name="email" />
+
+  </body>
+</html>
