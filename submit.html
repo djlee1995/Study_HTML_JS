@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>onsubmit( ) 이벤트 핸들러 다루기</title>
+    <script type="text/javascript">
+      function check(){
+        if(confim("elements.html로 이동합니다.")) {
+          document.form1.submit();
+        } else {
+          return false;
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+    <form name="form1" action="elements.html" onsubmit="return check();">
+     Form 객체 예제<br />
+     submit를 확인하면 elements.html로 이동합니다.<br /><br />
+     <input type="submit" value="확인" />
+     </form>
+  </body>
+</html>
