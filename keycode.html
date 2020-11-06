@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function checkKey(){
+       if(event.keyCode == 13) // enter키의 코드값 확인
+         {
+           alert("로그인 하시겠습니까?");
+         }
+       }
+    </script>
+  </head>
+  <body>
+    <form name="form1">
+     event객체 예제<br /><br />
+     Email : <input type="text" name="email" /> <br />
+     ID : <input type="text" name="id" /> <br />
+     Password : <input type="password" name="pw" onkeypress=
+     "checkKey();" /> <br /><br />
+     <input type="button" value="확인" />
+     </form>
+  </body>
+</html>
