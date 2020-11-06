@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>현재 날짜와 요일 출력하기</title>
+    <script type="text/javascript">
+      var today = new Date();
+      var day, week;
+      week = new Array("일","월","화","수","목","금","토");
+      day = week[today.getDay()];
+      document.write(today.getFullYear()+"년 " + (today.getMonth()+1) +
+      "월" + today.getDate() + "일 " + day+" 요일");
+    </script>
+  </head>
+  <body>
+    <p> 오늘 날짜를 출력하는 예제</p>
+  </body>
+</html>
