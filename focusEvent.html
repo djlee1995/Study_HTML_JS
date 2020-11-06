@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>이벤트 핸들러 활용</title>
+    <script>
+      function check(){
+       if(document.member.id.value == "")
+       alert("아이디를 입력하세요");
+       }
+
+    </script>
+  </head>
+  <body>
+    <form name="member" >
+     ID <input type="text" name="id" onfocus="alert('4글자 이상 아이디를 입력하세요');" onblur="check();" />
+     Password <input type="password" name="pw" />
+    </form>
+  </body>
+</html>
