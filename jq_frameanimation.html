@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>프레임 애니메이션</title>
+    <script>
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var count = 0;
+            var image = document.getElementById('image');
+            var frames = [
+                'image/0.png', 'image/1.png', 'image/2.png', 'image/3.png', 'image/4.png',
+                'image/5.png', 'image/6.png', 'image/7.png', 'image/8.png', 'image/9.png',
+                'image/10.png', 'image/11.png', 'image/12.png', 'image/13.png', 'image/14.png',
+            ];
+            // 타이머 반복을 시작합니다.
+            setInterval(function () {
+                image.src = frames[count % frames.length];
+                count = count + 1;
+            }, 1000 / 20);
+        };
+    </script>
+</head>
+<body>
+    <img id="image">
+</body>
+</html>
