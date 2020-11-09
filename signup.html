@@ -38,61 +38,14 @@
               +"취미 :"+prt+"\n"
               +"자기소개 :"+intro
             );
+            function excute(){
+              var id= document.form1.email2.value;
+              alert(id)
       }
-      function id_check()
-  {
-     var id_c;
-     id_c = document.form1.id.value;
-     if(id_c.length < 6)
-        {
-        alert("아이디는 최소6자~최대10자를 입력하세요.");
-        document.form1.id.focus();
-        }
-     else if(id_c.length > 10)
-        {
-        alert("아이디는 최소6자~최대10자를 입력하세요.");
-        document.form1.id.focus();
-        }
-  }
-
-  function pw_check1()
-   {
-     var pw_c;
-     pw_c = document.form1.pw.value;
-
-     if(pw_c.length < 6)
-        {
-           alert("비밀번호는 최소6자~최대10자를 입력하세요.");
-           document.form1.pw.focus();
-        }
-     else if(pw_c.length > 10)
-        {
-           alert("아이디는 최소6자~최대10자를 입력하세요.");
-           document.form1.pw.focus();
-        }
-   }
-
-   function pw_check2()
-      {
-         if(document.pw.pw1.value != document.pw.pw1.value)
-            {
-               alert("비밀번호가 일치하지 않습니다.");
-            }
+      function excute(){
+        var id= document.form1.email2.value;
+        alert(id)
       }
-
-      function jumin1_check()
-        {
-           var j1_snb;
-           j1_sub = document.form1.jumin1.value;
-           if(j1_sub.length != 6)
-              {
-              alert("생년월일 6자리를 입력하세요.");
-              document.form1.jumin1.focus();
-              }
-        }
-
-
-
      function check(app){
       switch(app.value.substr(0,1)){
       case "1" : document.form1.sex[0].checked=true; break;
@@ -124,24 +77,24 @@
       <tr align="left">
         <th height="30">아이디</th>
         <th><input type="text" name="id" placeholder="최소6~최대10, 숫자와알파벳만 사용"
-           maxlength=10 size="30" onblur="id_check();"></th>
+           maxlength=10 size="30"></th>
 
       </tr>
       <tr align="left">
         <th height="30">비밀번호</th>
         <th><input type="text" name="pw" placeholder="최소6~최대10, 숫자와알파벳만 사용"
-            maxlength="10" size="30" onblur="pw_check1();"></th>
+            maxlength="10" size="30"></th>
 
       </tr>
       <tr align="left">
         <th height="30">비밀번호 확인</th>
         <th><input type="password" name="pw1" placeholder="최소6~최대10, 숫자와알파벳만 사용"
-           maxlength="10" size="30" onblur="pw_check2();"></th>
+           maxlength="10" size="30"></th>
 
       </tr>
       <tr align="left">
         <th height="30">주민번호</th>
-        <th><input type="text" name="jumin1" maxlength="7" size="8" onblur=" jumin1_check();" /> - <input
+        <th><input type="text" name="jumin1" maxlength="7" size="8" /> - <input
          type="text" name="jumin2" onblur="check(this);" maxlength="7" size="8" /> </th>
 
       </tr>
