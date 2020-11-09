@@ -5,6 +5,14 @@
     <title>프레임 애니메이션</title>
     <script>
         window.onload = function () {
+          /*var count =0;
+          var image = $('#image');
+          alert(image.attr('id'));
+          var frames= [
+              'image/0.png', 'image/1.png', 'image/2.png', 'image/3.png', 'image/4.png',
+              'image/5.png', 'image/6.png', 'image/7.png', 'image/8.png', 'image/9.png',
+              'image/10.png', 'image/11.png', 'image/12.png', 'image/13.png', 'image/14.png',
+          ];*/
             // 변수를 선언합니다.
             var count = 0;
             var image = document.getElementById('image');
@@ -19,7 +27,9 @@
                 count = count + 1;
             }, 1000 / 20);
         };
+
     </script>
+
 </head>
 <body>
     <img id="image">
